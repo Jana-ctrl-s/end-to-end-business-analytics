@@ -1,0 +1,13 @@
+run_id,experiment_id,status,metrics.davies_bouldin,metrics.calinski_harabasz,metrics.silhouette_score,metrics.test_mae,metrics.cv_r2,metrics.test_rmse,metrics.test_r2,metrics.test_roc_auc,metrics.test_accuracy,metrics.test_f1,metrics.test_precision,metrics.test_recall,metrics.test_pr_auc,metrics.cv_f1,params.n_clusters,params.num_leaves,params.learning_rate,params.max_depth,params.n_estimators,params.subsample,params.min_samples_leaf,params.alpha,params.C,tags.mlflow.runName
+41e7e8dcab574dfa910927bef54c7ab3,3,FINISHED,0.6531,8924.95,0.5482,,,,,,,,,,,,4,,,,,,,,,cluster_Agglomerative_k4
+5354d4b293b748539760ea1fbfdb1f8d,3,FINISHED,0.655,8871.12,0.5465,,,,,,,,,,,,4,,,,,,,,,cluster_GaussianMixture_k4
+3e33c0d2b7fb494a9476820b05189988,3,FINISHED,0.6495,8949.06,0.5501,,,,,,,,,,,,4,,,,,,,,,cluster_KMeans_k4
+f73c1869f05a47288c3c37710660b565,2,FINISHED,,,,1387.47,0.9672,2843.21,0.9781,,,,,,,,,31,0.06,4,150,,,,,revenue_LGBMRegressor
+7c15e1c5b7204449b3285c6271f622b2,2,FINISHED,,,,1330.8,0.9657,2862.21,0.9778,,,,,,,,,,0.06,5,150,0.8,,,,revenue_XGBRegressor
+9d9114d451424fc589e3388830f34963,2,FINISHED,,,,1448.74,0.9652,3138.06,0.9733,,,,,,,,,,,12,250,,3,,,revenue_RandomForestRegressor
+6c38bdfeb24a464d8518cdfdc102050b,2,FINISHED,,,,3147.42,0.8934,5470.84,0.9189,,,,,,,,,,,,,,,1.0,,revenue_RidgeRegression
+e6b187c12e9744598a5301528a0a450d,2,FINISHED,,,,13052.95,-0.0018,19254.47,-0.0047,,,,,,,,,,,,,,,,,revenue_DummyBaseline
+ac88f47013964acfa36efb4bc3ad3c61,1,FINISHED,,,,,,,,0.9829,0.9675,0.9656,0.9505,0.9812,0.9716,0.9657,,45,0.1,6,150,,,,,churn_LGBMClassifier
+b6ef837e7e654d7e8367cfbe214c90fb,1,FINISHED,,,,,,,,0.9833,0.9675,0.9656,0.9505,0.9812,0.9709,0.966,,,0.06,5,150,0.8,,,,churn_XGBClassifier
+7bd6a987308a4a979ac08b01a81f99e1,1,FINISHED,,,,,,,,0.9851,0.9675,0.9656,0.9505,0.9812,0.9712,0.9644,,,,14,150,,6,,,churn_RandomForestClassifier
+ca8558dcdc6a4f69b8ac7f7566b36b93,1,FINISHED,,,,,,,,0.9871,0.9688,0.967,0.9506,0.9839,0.9801,0.9671,,,,,,,,,0.1,churn_LogisticRegression

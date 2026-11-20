@@ -1,0 +1,21 @@
+{
+  "classification_error_summary": {
+    "total_test_samples": 800,
+    "false_positives_count": 19,
+    "false_negatives_count": 6,
+    "fp_avg_probability": 0.88,
+    "fn_avg_probability": 0.127,
+    "fn_avg_csat": 4.08,
+    "business_note": "False Negatives carry higher revenue loss risk than False Positives; lowering probability alert threshold from 0.50 to 0.42 improves recall for high-CLV accounts."
+  },
+  "regression_error_by_segment_mae_usd": {
+    "Enterprise": 2546.88,
+    "Mid-Market": 1339.79,
+    "SMB": 449.74
+  },
+  "limitations": [
+    "Model features are anchored at historical cutoff (2025-12-31) without clickstream.",
+    "Enterprise accounts exhibit wider CLV variance, raising segment-level MAE vs SMB.",
+    "External macroeconomic indicators reflect annual GDP snapshots rather than quarterly."
+  ]
+}

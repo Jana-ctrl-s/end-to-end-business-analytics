@@ -1,0 +1,321 @@
+{
+  "classification": {
+    "champion_name": "LogisticRegression",
+    "champion_metrics": {
+      "model_name": "LogisticRegression",
+      "cv_f1": 0.9671,
+      "test_accuracy": 0.9688,
+      "test_precision": 0.9506,
+      "test_recall": 0.9839,
+      "test_f1": 0.967,
+      "test_roc_auc": 0.9871,
+      "test_pr_auc": 0.9801
+    },
+    "benchmark": [
+      {
+        "model_name": "LogisticRegression",
+        "cv_f1": 0.9671,
+        "test_accuracy": 0.9688,
+        "test_precision": 0.9506,
+        "test_recall": 0.9839,
+        "test_f1": 0.967,
+        "test_roc_auc": 0.9871,
+        "test_pr_auc": 0.9801
+      },
+      {
+        "model_name": "RandomForestClassifier",
+        "cv_f1": 0.9644,
+        "test_accuracy": 0.9675,
+        "test_precision": 0.9505,
+        "test_recall": 0.9812,
+        "test_f1": 0.9656,
+        "test_roc_auc": 0.9851,
+        "test_pr_auc": 0.9712
+      },
+      {
+        "model_name": "XGBClassifier",
+        "cv_f1": 0.966,
+        "test_accuracy": 0.9675,
+        "test_precision": 0.9505,
+        "test_recall": 0.9812,
+        "test_f1": 0.9656,
+        "test_roc_auc": 0.9833,
+        "test_pr_auc": 0.9709
+      },
+      {
+        "model_name": "LGBMClassifier",
+        "cv_f1": 0.9657,
+        "test_accuracy": 0.9675,
+        "test_precision": 0.9505,
+        "test_recall": 0.9812,
+        "test_f1": 0.9656,
+        "test_roc_auc": 0.9829,
+        "test_pr_auc": 0.9716
+      }
+    ],
+    "confusion_matrix": [
+      [
+        409,
+        19
+      ],
+      [
+        6,
+        366
+      ]
+    ],
+    "feature_importances": [
+      {
+        "feature": "recency_days",
+        "importance": 0.1231
+      },
+      {
+        "feature": "order_frequency",
+        "importance": 0.0794
+      },
+      {
+        "feature": "spend_momentum_ratio",
+        "importance": 0.0774
+      },
+      {
+        "feature": "contract_type_Monthly",
+        "importance": 0.0701
+      },
+      {
+        "feature": "avg_csat",
+        "importance": 0.0573
+      },
+      {
+        "feature": "contract_type_2-Year",
+        "importance": 0.0556
+      },
+      {
+        "feature": "avg_nps",
+        "importance": 0.0505
+      },
+      {
+        "feature": "escalation_rate",
+        "importance": 0.0465
+      },
+      {
+        "feature": "avg_delivery_days",
+        "importance": 0.0415
+      },
+      {
+        "feature": "primary_category_Managed Services",
+        "importance": 0.0378
+      },
+      {
+        "feature": "macro_region_Europe",
+        "importance": 0.024
+      },
+      {
+        "feature": "hist_total_profit_usd",
+        "importance": 0.0229
+      }
+    ]
+  },
+  "regression": {
+    "champion_name": "LGBMRegressor",
+    "champion_metrics": {
+      "model_name": "LGBMRegressor",
+      "cv_r2": 0.9672,
+      "test_rmse": 2843.21,
+      "test_mae": 1387.47,
+      "test_r2": 0.9781
+    },
+    "baseline_metrics": {
+      "model_name": "DummyBaseline",
+      "cv_r2": -0.0018,
+      "test_rmse": 19254.47,
+      "test_mae": 13052.95,
+      "test_r2": -0.0047
+    },
+    "benchmark": [
+      {
+        "model_name": "LGBMRegressor",
+        "cv_r2": 0.9672,
+        "test_rmse": 2843.21,
+        "test_mae": 1387.47,
+        "test_r2": 0.9781
+      },
+      {
+        "model_name": "XGBRegressor",
+        "cv_r2": 0.9657,
+        "test_rmse": 2862.21,
+        "test_mae": 1330.8,
+        "test_r2": 0.9778
+      },
+      {
+        "model_name": "RandomForestRegressor",
+        "cv_r2": 0.9652,
+        "test_rmse": 3138.06,
+        "test_mae": 1448.74,
+        "test_r2": 0.9733
+      },
+      {
+        "model_name": "RidgeRegression",
+        "cv_r2": 0.8934,
+        "test_rmse": 5470.84,
+        "test_mae": 3147.42,
+        "test_r2": 0.9189
+      },
+      {
+        "model_name": "DummyBaseline",
+        "cv_r2": -0.0018,
+        "test_rmse": 19254.47,
+        "test_mae": 13052.95,
+        "test_r2": -0.0047
+      }
+    ],
+    "feature_importances": [
+      {
+        "feature": "account_tenure_days",
+        "importance": 0.2635
+      },
+      {
+        "feature": "hist_total_revenue_usd",
+        "importance": 0.2034
+      },
+      {
+        "feature": "avg_order_value_usd",
+        "importance": 0.0883
+      },
+      {
+        "feature": "recent_90d_revenue_usd",
+        "importance": 0.0883
+      },
+      {
+        "feature": "hist_total_profit_usd",
+        "importance": 0.0438
+      },
+      {
+        "feature": "recency_days",
+        "importance": 0.0393
+      },
+      {
+        "feature": "log_hist_revenue",
+        "importance": 0.0393
+      },
+      {
+        "feature": "spend_momentum_ratio",
+        "importance": 0.0386
+      },
+      {
+        "feature": "contract_type_2-Year",
+        "importance": 0.0379
+      },
+      {
+        "feature": "avg_csat",
+        "importance": 0.0275
+      },
+      {
+        "feature": "gdp_growth_pct",
+        "importance": 0.0223
+      },
+      {
+        "feature": "contract_type_Monthly",
+        "importance": 0.0193
+      }
+    ],
+    "residual_std": 2843.17
+  },
+  "clustering": {
+    "champion_name": "KMeans_k4",
+    "champion_metrics": {
+      "model_name": "KMeans_k4",
+      "silhouette_score": 0.5501,
+      "davies_bouldin": 0.6495,
+      "calinski_harabasz": 8949.06
+    },
+    "benchmark": [
+      {
+        "model_name": "KMeans_k4",
+        "silhouette_score": 0.5501,
+        "davies_bouldin": 0.6495,
+        "calinski_harabasz": 8949.06
+      },
+      {
+        "model_name": "Agglomerative_k4",
+        "silhouette_score": 0.5482,
+        "davies_bouldin": 0.6531,
+        "calinski_harabasz": 8924.95
+      },
+      {
+        "model_name": "GaussianMixture_k4",
+        "silhouette_score": 0.5465,
+        "davies_bouldin": 0.655,
+        "calinski_harabasz": 8871.12
+      }
+    ],
+    "k_scan": [
+      {
+        "k": 2,
+        "inertia": 10108.23,
+        "silhouette": 0.491
+      },
+      {
+        "k": 3,
+        "inertia": 4018.61,
+        "silhouette": 0.6306
+      },
+      {
+        "k": 4,
+        "inertia": 2591.17,
+        "silhouette": 0.5501
+      },
+      {
+        "k": 5,
+        "inertia": 2293.14,
+        "silhouette": 0.4666
+      },
+      {
+        "k": 6,
+        "inertia": 2070.37,
+        "silhouette": 0.3961
+      },
+      {
+        "k": 7,
+        "inertia": 1866.81,
+        "silhouette": 0.3351
+      }
+    ],
+    "cluster_profiles": [
+      {
+        "cluster_label": "At-Risk High-Friction",
+        "customers": 887,
+        "avg_recency_days": 99.82,
+        "avg_frequency": 5.97,
+        "avg_hist_revenue": 6449.13,
+        "avg_csat": 2.24,
+        "churn_rate_pct": 94.02
+      },
+      {
+        "cluster_label": "Dormant Price-Sensitive",
+        "customers": 1014,
+        "avg_recency_days": 244.22,
+        "avg_frequency": 2.54,
+        "avg_hist_revenue": 1626.08,
+        "avg_csat": 3.5,
+        "churn_rate_pct": 96.65
+      },
+      {
+        "cluster_label": "Enterprise Champions",
+        "customers": 867,
+        "avg_recency_days": 17.11,
+        "avg_frequency": 13.08,
+        "avg_hist_revenue": 29178.04,
+        "avg_csat": 4.61,
+        "churn_rate_pct": 0.12
+      },
+      {
+        "cluster_label": "Loyal Growth Mid-Market",
+        "customers": 1232,
+        "avg_recency_days": 42.69,
+        "avg_frequency": 8.08,
+        "avg_hist_revenue": 10476.02,
+        "avg_csat": 4.11,
+        "churn_rate_pct": 3.65
+      }
+    ]
+  }
+}

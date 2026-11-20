@@ -1,0 +1,104 @@
+{
+  "champion": {
+    "model_name": "KMeans_k4",
+    "silhouette_score": 0.5501,
+    "davies_bouldin": 0.6495,
+    "calinski_harabasz": 8949.06
+  },
+  "all_models": [
+    {
+      "model_name": "KMeans_k4",
+      "silhouette_score": 0.5501,
+      "davies_bouldin": 0.6495,
+      "calinski_harabasz": 8949.06
+    },
+    {
+      "model_name": "Agglomerative_k4",
+      "silhouette_score": 0.5482,
+      "davies_bouldin": 0.6531,
+      "calinski_harabasz": 8924.95
+    },
+    {
+      "model_name": "GaussianMixture_k4",
+      "silhouette_score": 0.5465,
+      "davies_bouldin": 0.655,
+      "calinski_harabasz": 8871.12
+    }
+  ],
+  "k_scan": [
+    {
+      "k": 2,
+      "inertia": 10108.23,
+      "silhouette": 0.491
+    },
+    {
+      "k": 3,
+      "inertia": 4018.61,
+      "silhouette": 0.6306
+    },
+    {
+      "k": 4,
+      "inertia": 2591.17,
+      "silhouette": 0.5501
+    },
+    {
+      "k": 5,
+      "inertia": 2293.14,
+      "silhouette": 0.4666
+    },
+    {
+      "k": 6,
+      "inertia": 2070.37,
+      "silhouette": 0.3961
+    },
+    {
+      "k": 7,
+      "inertia": 1866.81,
+      "silhouette": 0.3351
+    }
+  ],
+  "persona_map": {
+    "2": "At-Risk High-Friction",
+    "3": "Enterprise Champions",
+    "0": "Dormant Price-Sensitive",
+    "1": "Loyal Growth Mid-Market"
+  },
+  "cluster_profiles": [
+    {
+      "cluster_label": "At-Risk High-Friction",
+      "customers": 887,
+      "avg_recency_days": 99.82,
+      "avg_frequency": 5.97,
+      "avg_hist_revenue": 6449.13,
+      "avg_csat": 2.24,
+      "churn_rate_pct": 94.02
+    },
+    {
+      "cluster_label": "Dormant Price-Sensitive",
+      "customers": 1014,
+      "avg_recency_days": 244.22,
+      "avg_frequency": 2.54,
+      "avg_hist_revenue": 1626.08,
+      "avg_csat": 3.5,
+      "churn_rate_pct": 96.65
+    },
+    {
+      "cluster_label": "Enterprise Champions",
+      "customers": 867,
+      "avg_recency_days": 17.11,
+      "avg_frequency": 13.08,
+      "avg_hist_revenue": 29178.04,
+      "avg_csat": 4.61,
+      "churn_rate_pct": 0.12
+    },
+    {
+      "cluster_label": "Loyal Growth Mid-Market",
+      "customers": 1232,
+      "avg_recency_days": 42.69,
+      "avg_frequency": 8.08,
+      "avg_hist_revenue": 10476.02,
+      "avg_csat": 4.11,
+      "churn_rate_pct": 3.65
+    }
+  ]
+}
