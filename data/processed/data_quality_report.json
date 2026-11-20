@@ -1,0 +1,17 @@
+{
+  "raw_orders_count": 36554,
+  "clean_orders_count": 36014,
+  "duplicate_orders_removed": 540,
+  "raw_interactions_count": 12338,
+  "clean_interactions_count": 12156,
+  "duplicate_interactions_removed": 182,
+  "raw_customers_count": 4000,
+  "clean_customers_count": 4000,
+  "missing_values_imputed": 3148,
+  "outliers_clamped": 240,
+  "casing_standardized_count": 1582,
+  "validation_records_checked": 52188,
+  "validation_errors_count": 0,
+  "post_cleaning_error_rate_pct": 0.0,
+  "pipeline_duration_seconds": 11.767
+}

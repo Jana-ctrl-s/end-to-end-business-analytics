@@ -1,0 +1,7 @@
+category,competitor_avg_price,competitor_price_index,market_rating_avg,in_stock_rate,scraped_sample_count,source_url,ingested_at_utc
+Cloud Software,415.38,0.989,3.5,1.0,4,https://books.toscrape.com/,2026-11-20T14:31:24.989343+00:00
+Enterprise Hardware,735.76,1.082,2.75,1.0,4,https://books.toscrape.com/,2026-11-20T14:31:24.989343+00:00
+Analytics Modules,322.32,0.948,3.33,1.0,3,https://books.toscrape.com/,2026-11-20T14:31:24.989343+00:00
+IoT Sensors,222.5,1.141,2.67,1.0,3,https://books.toscrape.com/,2026-11-20T14:31:24.989343+00:00
+Security Suites,468.44,0.956,2.67,1.0,3,https://books.toscrape.com/,2026-11-20T14:31:24.989343+00:00
+Managed Services,554.4,0.99,2.0,1.0,3,https://books.toscrape.com/,2026-11-20T14:31:24.989343+00:00

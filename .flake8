@@ -1,0 +1,14 @@
+[flake8]
+max-line-length = 100
+extend-ignore = E203, W503
+exclude =
+    .venv,
+    __pycache__,
+    mlruns,
+    data,
+    models,
+    .git,
+    .ipynb_checkpoints
+per-file-ignores =
+    __init__.py:F401
+    scripts/generate_infographic_and_diagrams.py:E501

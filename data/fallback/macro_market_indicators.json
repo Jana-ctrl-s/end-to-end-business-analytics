@@ -1,0 +1,30 @@
+{
+  "fx_rates": {
+    "USD": 1.0,
+    "CAD": 1.38,
+    "GBP": 0.78,
+    "EUR": 0.92,
+    "EGP": 48.65,
+    "AED": 3.6725,
+    "SAR": 3.75,
+    "AUD": 1.52,
+    "JPY": 152.4,
+    "INR": 84.15,
+    "BRL": 5.68
+  },
+  "gdp_growth": {
+    "USA": {"gdp_growth_pct": 2.8, "year": 2024},
+    "CAN": {"gdp_growth_pct": 1.5, "year": 2024},
+    "GBR": {"gdp_growth_pct": 1.1, "year": 2024},
+    "DEU": {"gdp_growth_pct": 0.2, "year": 2024},
+    "FRA": {"gdp_growth_pct": 1.1, "year": 2024},
+    "EGY": {"gdp_growth_pct": 2.9, "year": 2024},
+    "ARE": {"gdp_growth_pct": 3.8, "year": 2024},
+    "SAU": {"gdp_growth_pct": 1.9, "year": 2024},
+    "AUS": {"gdp_growth_pct": 1.4, "year": 2024},
+    "JPN": {"gdp_growth_pct": 0.7, "year": 2024},
+    "IND": {"gdp_growth_pct": 6.8, "year": 2024},
+    "BRA": {"gdp_growth_pct": 3.1, "year": 2024}
+  },
+  "source_provider": "Offline Deterministic Fallback (Open-ER & World Bank Snapshot)"
+}

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "end-to-end-business-analytics"
+version = "1.0.0"
+description = "DEPI Capstone: End-to-End Business Analytics Decision Platform following the CRISP-DM lifecycle."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Jana & DEPI AI & Data Science Team" }
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-v --tb=short"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::FutureWarning",
+    "ignore::UserWarning",
+]
+
+[tool.coverage.run]
+source = ["src", "api"]
+omit = [
+    "src/__init__.py",
+    "src/ingestion/__init__.py",
+    "src/etl/__init__.py",
+    "src/ml/__init__.py",
+    "api/__init__.py",
+]
+
+[tool.coverage.report]
+show_missing = true
+precision = 2
+fail_under = 80
