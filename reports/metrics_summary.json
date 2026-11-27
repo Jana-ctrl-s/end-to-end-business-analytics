@@ -1,5 +1,5 @@
 {
-  "total_pipeline_duration_seconds": 136.85,
+  "total_pipeline_duration_seconds": 37.94,
   "pipeline_under_15_min_sla": true,
   "etl_error_rate_pct": 0.0,
   "etl_under_0_1_pct_sla": true,
@@ -7,9 +7,9 @@
   "classification_test_f1": 0.967,
   "classification_test_roc_auc": 0.9871,
   "classification_f1_sla_passed": true,
-  "regression_champion": "LGBMRegressor",
-  "regression_test_r2": 0.9781,
-  "regression_test_rmse": 2843.21,
+  "regression_champion": "XGBRegressor",
+  "regression_test_r2": 0.9797,
+  "regression_test_rmse": 2738.48,
   "regression_baseline_rmse": 19254.47,
   "regression_r2_sla_passed": true,
   "clustering_champion": "KMeans_k4",
@@ -25,9 +25,9 @@
     "business_note": "False Negatives carry higher revenue loss risk than False Positives; lowering probability alert threshold from 0.50 to 0.42 improves recall for high-CLV accounts."
   },
   "requests_tested": 100,
-  "api_mean_latency_ms": 76.52,
-  "api_p50_latency_ms": 75.88,
-  "api_p95_latency_ms": 110.55,
-  "api_p99_latency_ms": 117.41,
+  "api_mean_latency_ms": 14.46,
+  "api_p50_latency_ms": 13.95,
+  "api_p95_latency_ms": 15.05,
+  "api_p99_latency_ms": 16.68,
   "api_p95_under_200ms_sla": true
 }

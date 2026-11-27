@@ -221,7 +221,7 @@ def main() -> None:
                 height=380,
                 legend=dict(orientation="h", y=1.08),
             )
-            st.plotly_chart(fig_trend, use_container_width=True)
+            st.plotly_chart(fig_trend, width="stretch")
 
         with col_r:
             cat_perf = (
@@ -244,7 +244,7 @@ def main() -> None:
                 title="Category Revenue & Net Profit Comparison",
             )
             fig_cat.update_layout(template="plotly_white", height=380)
-            st.plotly_chart(fig_cat, use_container_width=True)
+            st.plotly_chart(fig_cat, width="stretch")
 
     with tab2:
         geo_df = (
@@ -269,7 +269,7 @@ def main() -> None:
                 title="Global Revenue Distribution Across Operating Markets",
             )
             fig_map.update_layout(height=410, margin=dict(l=0, r=0, t=40, b=0))
-            st.plotly_chart(fig_map, use_container_width=True)
+            st.plotly_chart(fig_map, width="stretch")
 
         with g_col2:
             fig_geo_bar = px.bar(
@@ -281,15 +281,15 @@ def main() -> None:
                 title="Market Churn Rate (%) & Regional Benchmark",
             )
             fig_geo_bar.update_layout(template="plotly_white", height=410)
-            st.plotly_chart(fig_geo_bar, use_container_width=True)
+            st.plotly_chart(fig_geo_bar, width="stretch")
 
         m_col1, m_col2 = st.columns(2)
         with m_col1:
             st.subheader("External Macroeconomic & FX Feed (REST API)")
-            st.dataframe(data["macro"], use_container_width=True, hide_index=True)
+            st.dataframe(data["macro"], width="stretch", hide_index=True)
         with m_col2:
             st.subheader("Competitive Price Benchmarks (BeautifulSoup Scraper)")
-            st.dataframe(data["competitors"], use_container_width=True, hide_index=True)
+            st.dataframe(data["competitors"], width="stretch", hide_index=True)
 
     with tab3:
         c_left, c_right = st.columns(2)
@@ -306,7 +306,7 @@ def main() -> None:
                     opacity=0.72,
                 )
                 fig_pca.update_layout(template="plotly_white", height=410)
-                st.plotly_chart(fig_pca, use_container_width=True)
+                st.plotly_chart(fig_pca, width="stretch")
 
         with c_right:
             contract_churn = (
@@ -326,7 +326,7 @@ def main() -> None:
                 title="Churn Rate by Contract Commitment & Segment",
             )
             fig_cc.update_layout(template="plotly_white", height=410)
-            st.plotly_chart(fig_cc, use_container_width=True)
+            st.plotly_chart(fig_cc, width="stretch")
 
         st.subheader("High-Priority At-Risk Accounts Watchlist")
         watchlist = (
@@ -348,7 +348,7 @@ def main() -> None:
             .sort_values("hist_total_revenue_usd", ascending=False)
             .head(25)
         )
-        st.dataframe(watchlist, use_container_width=True, hide_index=True)
+        st.dataframe(watchlist, width="stretch", hide_index=True)
         st.download_button(
             "Download High-Risk Watchlist (CSV)",
             data=watchlist.to_csv(index=False).encode("utf-8"),
@@ -453,21 +453,21 @@ def main() -> None:
             st.markdown("**Churn Classification Benchmark**")
             st.dataframe(
                 pd.DataFrame(reg["classification"]["benchmark"]),
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
             )
         with b2:
             st.markdown("**Next-12M Revenue Regression Benchmark**")
             st.dataframe(
                 pd.DataFrame(reg["regression"]["benchmark"]),
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
             )
         with b3:
             st.markdown("**Customer Segmentation Benchmark**")
             st.dataframe(
                 pd.DataFrame(reg["clustering"]["benchmark"]),
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
             )
 

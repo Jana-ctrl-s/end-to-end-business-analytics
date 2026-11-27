@@ -33,16 +33,6 @@
         "test_pr_auc": 0.9712
       },
       {
-        "model_name": "XGBClassifier",
-        "cv_f1": 0.966,
-        "test_accuracy": 0.9675,
-        "test_precision": 0.9505,
-        "test_recall": 0.9812,
-        "test_f1": 0.9656,
-        "test_roc_auc": 0.9833,
-        "test_pr_auc": 0.9709
-      },
-      {
         "model_name": "LGBMClassifier",
         "cv_f1": 0.9657,
         "test_accuracy": 0.9675,
@@ -51,6 +41,16 @@
         "test_f1": 0.9656,
         "test_roc_auc": 0.9829,
         "test_pr_auc": 0.9716
+      },
+      {
+        "model_name": "XGBClassifier",
+        "cv_f1": 0.965,
+        "test_accuracy": 0.9675,
+        "test_precision": 0.9505,
+        "test_recall": 0.9812,
+        "test_f1": 0.9656,
+        "test_roc_auc": 0.9826,
+        "test_pr_auc": 0.969
       }
     ],
     "confusion_matrix": [
@@ -115,13 +115,13 @@
     ]
   },
   "regression": {
-    "champion_name": "LGBMRegressor",
+    "champion_name": "XGBRegressor",
     "champion_metrics": {
-      "model_name": "LGBMRegressor",
-      "cv_r2": 0.9672,
-      "test_rmse": 2843.21,
-      "test_mae": 1387.47,
-      "test_r2": 0.9781
+      "model_name": "XGBRegressor",
+      "cv_r2": 0.9656,
+      "test_rmse": 2738.48,
+      "test_mae": 1251.13,
+      "test_r2": 0.9797
     },
     "baseline_metrics": {
       "model_name": "DummyBaseline",
@@ -132,6 +132,13 @@
     },
     "benchmark": [
       {
+        "model_name": "XGBRegressor",
+        "cv_r2": 0.9656,
+        "test_rmse": 2738.48,
+        "test_mae": 1251.13,
+        "test_r2": 0.9797
+      },
+      {
         "model_name": "LGBMRegressor",
         "cv_r2": 0.9672,
         "test_rmse": 2843.21,
@@ -139,17 +146,10 @@
         "test_r2": 0.9781
       },
       {
-        "model_name": "XGBRegressor",
-        "cv_r2": 0.9657,
-        "test_rmse": 2862.21,
-        "test_mae": 1330.8,
-        "test_r2": 0.9778
-      },
-      {
         "model_name": "RandomForestRegressor",
         "cv_r2": 0.9652,
-        "test_rmse": 3138.06,
-        "test_mae": 1448.74,
+        "test_rmse": 3137.89,
+        "test_mae": 1448.13,
         "test_r2": 0.9733
       },
       {
@@ -169,55 +169,55 @@
     ],
     "feature_importances": [
       {
-        "feature": "account_tenure_days",
-        "importance": 0.2635
-      },
-      {
         "feature": "hist_total_revenue_usd",
-        "importance": 0.2034
-      },
-      {
-        "feature": "avg_order_value_usd",
-        "importance": 0.0883
+        "importance": 0.248
       },
       {
         "feature": "recent_90d_revenue_usd",
-        "importance": 0.0883
-      },
-      {
-        "feature": "hist_total_profit_usd",
-        "importance": 0.0438
-      },
-      {
-        "feature": "recency_days",
-        "importance": 0.0393
+        "importance": 0.2232
       },
       {
         "feature": "log_hist_revenue",
-        "importance": 0.0393
+        "importance": 0.1746
       },
       {
-        "feature": "spend_momentum_ratio",
-        "importance": 0.0386
+        "feature": "recency_days",
+        "importance": 0.1064
+      },
+      {
+        "feature": "account_tenure_days",
+        "importance": 0.0704
+      },
+      {
+        "feature": "hist_total_profit_usd",
+        "importance": 0.0691
+      },
+      {
+        "feature": "acquisition_channel_Cloud Marketplace",
+        "importance": 0.0138
       },
       {
         "feature": "contract_type_2-Year",
-        "importance": 0.0379
+        "importance": 0.01
       },
       {
-        "feature": "avg_csat",
-        "importance": 0.0275
+        "feature": "avg_order_value_usd",
+        "importance": 0.0077
       },
       {
-        "feature": "gdp_growth_pct",
-        "importance": 0.0223
+        "feature": "contract_type_Annual",
+        "importance": 0.0064
       },
       {
-        "feature": "contract_type_Monthly",
-        "importance": 0.0193
+        "feature": "return_rate",
+        "importance": 0.0053
+      },
+      {
+        "feature": "order_frequency",
+        "importance": 0.0051
       }
     ],
-    "residual_std": 2843.17
+    "residual_std": 2737.24
   },
   "clustering": {
     "champion_name": "KMeans_k4",
